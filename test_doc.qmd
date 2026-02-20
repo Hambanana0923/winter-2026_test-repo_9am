@@ -8,9 +8,20 @@ editor: visual
 
 ```{r}
 #| label: packages and data
+#| message: false
 
 library(tidyverse) # general use package
 library(lterdatasampler) # package of datasets
 
 data(pie_crab) # crab size dataset 
+```
+
+```{r}
+#| label: latitude and size plot
+
+ # base layer: ggplot
+ggplot(data = pie_crab, # dataset
+       aes(x = latitude, # x-axis = latitude
+           y = size)) + # y-axis = crab size
+  geom_point() # points to represent individual points
 ```
