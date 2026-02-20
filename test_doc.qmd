@@ -1,0 +1,16 @@
+---
+title: "test doc"
+author: "Hambee Makinoda"
+date: "2026-02-20"
+format: html
+editor: visual
+---
+
+```{r}
+#| label: packages and data
+
+library(tidyverse) # general use package
+library(lterdatasampler) # package of datasets
+
+data(pie_crab) # crab size dataset 
+```
